@@ -1,200 +1,450 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Ashwin Vijith — TCOxAV</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div class="noise"></div>
-    
-    <header class="header">
-      <nav class="nav-container">
-        <a class="logo" href="#home">TCOxAV</a>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#hobbies">Hobbies</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <main>
-      <!-- Hero Section -->
-      <section class="hero" id="home">
-        <div class="hero-wrapper">
-          <div class="hero-image">
-            <img src="pfp.jpg" alt="Ashwin Vijith">
-            <div class="reflection" aria-hidden="true">
-              <img src="pfp.jpg" alt="">
-            </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ashwin Vijith (TCOxAV) — Cybersecurity, Bug Bounty Hunter & AI Systems Builder." />
+  <title>Ashwin Vijith — TCOxAV</title>
+
+  <!-- Google Fonts: Outfit (display) + Inter (body) + JetBrains Mono (code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Ambient Background -->
+  <div class="bg-ambient" aria-hidden="true">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+  </div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <a class="logo" href="#home">
+        <span class="logo-badge">TCOxAV</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="hero-wrapper">
+        <div class="hero-text">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>Available for research & collaboration</span>
           </div>
-          <div class="hero-text">
-            <h1>Ashwin Vijith</h1>
-            <p class="subtitle">Cybersecurity • Bug Bounty • AI Systems</p>
-            <p class="description">B.Tech CS student exploring bug bounty hunting, agentic systems, and building tools that matter. Passionate about security, code, and solving mysteries.</p>
-            <div class="cta-buttons">
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ashwinvijith1010@gmail.com" target="_blank" rel="noopener" class="btn btn-primary">Get in Touch</a>
-              <a href="https://github.com/TCOxAV" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
-            </div>
+          <h1>Hi, I'm <span class="text-gradient">Ashwin Vijith</span></h1>
+          <p class="subtitle">
+            <span>Cybersecurity</span>
+            <span class="subtitle-dot">•</span>
+            <span>Bug Bounty</span>
+            <span class="subtitle-dot">•</span>
+            <span>AI Systems</span>
+          </p>
+          <p class="description">
+            B.Tech CS student exploring bug bounty hunting, agentic systems, and building tools that matter. Passionate
+            about security, code, and solving mysteries.
+          </p>
+          <div class="cta-buttons">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ashwinvijith1010@gmail.com" target="_blank"
+              rel="noopener" class="btn btn-primary">
+              <span>Get in Touch</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+            <a href="https://github.com/TCOxAV" target="_blank" rel="noopener" class="btn btn-secondary">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+              <span>GitHub</span>
+            </a>
           </div>
         </div>
-      </section>
 
-      <!-- About Section -->
-      <section class="about" id="about">
-        <div class="section-content">
+        <div class="hero-image">
+          <div class="avatar-container">
+            <img src="pfp.jpg" alt="Ashwin Vijith" />
+          </div>
+          <div class="reflection" aria-hidden="true">
+            <img src="pfp.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about" id="about">
+      <div class="section-content">
+        <div class="section-header">
+          <span class="section-tag">// 01. Profile</span>
           <h2>About Me</h2>
-          <div class="about-grid">
-            <div class="about-card">
-              <h3>🔐 Security</h3>
-              <p>Actively exploring bug bounty hunting and security research. Learning to identify and responsibly disclose vulnerabilities.</p>
-            </div>
-            <div class="about-card">
-              <h3>💻 Development</h3>
-              <p>Building tools and systems with a focus on automation. Interested in agentic AI and practical applications.</p>
-            </div>
-            <div class="about-card">
-              <h3>🧩 Problem Solving</h3>
-              <p>Love tackling complex challenges and learning from collaborators. Always exploring new technologies and methodologies.</p>
-            </div>
+        </div>
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="card-icon">🔐</div>
+            <h3>Security & Research</h3>
+            <p>Actively exploring bug bounty hunting and security research. Learning to identify, analyze, and
+              responsibly disclose vulnerabilities.</p>
+          </div>
+          <div class="about-card">
+            <div class="card-icon">💻</div>
+            <h3>System Development</h3>
+            <p>Building tools and systems with a focus on automation, agentic workflows, and practical real-world
+              solutions.</p>
+          </div>
+          <div class="about-card">
+            <div class="card-icon">🧩</div>
+            <h3>Problem Solving</h3>
+            <p>Tackling complex engineering challenges and collaborating with peers. Always learning new methodologies
+              and emerging tech.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Projects Section -->
-      <section class="projects" id="work">
-        <div class="section-content">
+    <div class="section-divider"></div>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="projects" id="work">
+      <div class="section-content">
+        <div class="section-header">
+          <span class="section-tag">// 02. Portfolio</span>
           <h2>Recent Work</h2>
+        </div>
+        <div class="projects-grid">
+
+          <!-- AEGIS -->
           <div class="project-card">
             <div class="project-header">
               <h3><a href="https://github.com/TCOxAV/AEGIS" target="_blank" rel="noopener">AEGIS</a></h3>
-              <span class="badge">Beta</span>
+              <div class="badge-group">
+                <span class="badge badge-pink">Beta</span>
+                <span class="badge badge-dim">Private</span>
+              </div>
             </div>
-            <p>An agentic AI system developed with a senior collaborator demonstrating system-level automation and integrations. The project showcases research in autonomous systems.</p>
+            <p>An agentic AI system developed with a senior collaborator demonstrating system-level automation and
+              integrations. The project showcases research in autonomous systems.</p>
             <div class="tech-stack">
               <span class="tech">Python</span>
               <span class="tech">Automation</span>
               <span class="tech">AI Systems</span>
             </div>
-            <a href="https://github.com/TCOxAV/AEGIS" target="_blank" rel="noopener" class="link-arrow">View Project →</a>
+            <a href="https://github.com/TCOxAV/AEGIS" target="_blank" rel="noopener" class="link-arrow">
+              <span>View on GitHub</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7" />
+                <polyline points="7 7 17 7 17 17" />
+              </svg>
+            </a>
           </div>
+
+          <!-- Bug Bounty Toolkit -->
           <div class="project-card">
             <div class="project-header">
-              <h3><a href="https://github.com/TCOxAV/Bored-Codes" target="_blank" rel="noopener">Bored Codes</a></h3>
+              <h3>Bug Bounty Toolkit</h3>
+              <div class="badge-group">
+                <span class="badge badge-amber">WIP</span>
+                <span class="badge badge-dim">Private</span>
+              </div>
             </div>
-            <p>A collection of coding experiments and fun programs written in Python and C. Quick implementations of ideas and algorithms created during downtime.</p>
+            <p>Security tooling for reconnaissance and vulnerability discovery, currently in active development. Focused
+              on speed and extensibility.</p>
+            <div class="tech-stack">
+              <span class="tech">Python</span>
+              <span class="tech">Security</span>
+              <span class="tech">Recon</span>
+            </div>
+            <span class="link-arrow link-arrow-muted">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+              <span>Not yet public</span>
+            </span>
+          </div>
+
+          <!-- ProxiGuard -->
+          <div class="project-card">
+            <div class="project-header">
+              <h3><a href="https://github.com/TCOxAV/ProxiGuard" target="_blank" rel="noopener">ProxiGuard</a></h3>
+              <span class="badge badge-blue">Hackathon</span>
+            </div>
+            <p>A hackathon project that detects nearby threats reported by other users and alerts people in real time.
+            </p>
+            <div class="tech-stack">
+              <span class="tech">JavaScript</span>
+              <span class="tech">Real-time Alerts</span>
+            </div>
+            <a href="https://github.com/TCOxAV/ProxiGuard" target="_blank" rel="noopener" class="link-arrow">
+              <span>View on GitHub</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7" />
+                <polyline points="7 7 17 7 17 17" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- HandOrb -->
+          <div class="project-card">
+            <div class="project-header">
+              <h3><a href="https://github.com/TCOxAV/HandOrb" target="_blank" rel="noopener">HandOrb</a></h3>
+              <span class="badge badge-green">Live</span>
+            </div>
+            <p>An interactive web experiment built with JavaScript. A live demo you can try directly in the browser.</p>
+            <div class="tech-stack">
+              <span class="tech">JavaScript</span>
+              <span class="tech">HTML / CSS</span>
+            </div>
+            <div class="link-row">
+              <a href="https://github.com/TCOxAV/HandOrb" target="_blank" rel="noopener" class="link-arrow">
+                <span>GitHub</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+              </a>
+              <a href="https://tcoxav.github.io/HandOrb/" target="_blank" rel="noopener"
+                class="link-arrow link-arrow-green">
+                <span>Live Demo</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Arduino Madness -->
+          <div class="project-card">
+            <div class="project-header">
+              <h3><a href="https://github.com/TCOxAV/Arduino_Madness" target="_blank" rel="noopener">Arduino Madness</a>
+              </h3>
+            </div>
+            <p>A growing collection of hardware builds on the Arduino Uno R3 — 8×8 RGB LED matrix animations, laptop
+              matrix display, and NFC-driven LED matrix. Each project ships with its own wiring diagram.</p>
+            <div class="tech-stack">
+              <span class="tech">Arduino</span>
+              <span class="tech">C++</span>
+              <span class="tech">Electronics</span>
+            </div>
+            <a href="https://github.com/TCOxAV/Arduino_Madness" target="_blank" rel="noopener" class="link-arrow">
+              <span>View on GitHub</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7" />
+                <polyline points="7 7 17 7 17 17" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Bored Codes -->
+          <div class="project-card">
+            <div class="project-header">
+              <h3><a href="https://github.com/TCOxAV/BoredCodes" target="_blank" rel="noopener">Bored Codes</a></h3>
+            </div>
+            <p>A collection of coding experiments and fun programs written in Python and C. Quick implementations of
+              ideas and algorithms created during downtime.</p>
             <div class="tech-stack">
               <span class="tech">Python</span>
               <span class="tech">C</span>
               <span class="tech">Algorithms</span>
             </div>
-            <a href="https://github.com/TCOxAV/BoredCodes" target="_blank" rel="noopener" class="link-arrow">View Project →</a>
+            <a href="https://github.com/TCOxAV/BoredCodes" target="_blank" rel="noopener" class="link-arrow">
+              <span>View on GitHub</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7" />
+                <polyline points="7 7 17 7 17 17" />
+              </svg>
+            </a>
           </div>
-        </div>
-      </section>
 
-      <!-- Skills Section -->
-      <section class="skills" id="skills">
-        <div class="section-content">
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="skills" id="skills">
+      <div class="section-content">
+        <div class="section-header">
+          <span class="section-tag">// 03. Capabilities</span>
           <h2>Skills & Languages</h2>
-          <div class="skills-grid">
-            <div class="skill-group">
-              <h4>Specializations</h4>
-              <div class="skill-list">
-                <span class="skill-tag">Bug Bounty Hunting</span>
-                <span class="skill-tag">Security Research</span>
-                <span class="skill-tag">Automation</span>
-                <span class="skill-tag">System Design</span>
-              </div>
-            </div>
-            <div class="skill-group">
-              <h4>Languages</h4>
-              <div class="skill-list">
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">Rust</span>
-                <span class="skill-tag">C / C++</span>
-                <span class="skill-tag">HTML / CSS</span>
-                <span class="skill-tag">Web Designing</span>
-                <span class="skill-tag">Flutter (learning)</span>
-              </div>
+        </div>
+        <div class="skills-grid">
+
+          <div class="skill-group">
+            <h4>Specializations</h4>
+            <div class="skill-list">
+              <span class="skill-tag">Bug Bounty Hunting</span>
+              <span class="skill-tag">Security Research</span>
+              <span class="skill-tag">Automation</span>
+              <span class="skill-tag">System Design</span>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- Hobbies Section -->
-      <section class="hobbies" id="hobbies">
-        <div class="section-content">
+          <div class="skill-group">
+            <h4>Languages & Tech</h4>
+            <div class="skill-list">
+              <a href="https://python.org" target="_blank" rel="noopener" class="skill-tag skill-tag-link">
+                <span class="skill-icon">🐍</span> Python
+              </a>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener"
+                class="skill-tag skill-tag-link">
+                <span class="skill-icon">🟨</span> JavaScript
+              </a>
+              <a href="https://www.rust-lang.org" target="_blank" rel="noopener" class="skill-tag skill-tag-link">
+                <span class="skill-icon">🦀</span> Rust
+              </a>
+              <a href="https://en.cppreference.com" target="_blank" rel="noopener" class="skill-tag skill-tag-link">
+                <span class="skill-icon">⚙️</span> C / C++
+              </a>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener"
+                class="skill-tag skill-tag-link">
+                <span class="skill-icon">🌐</span> HTML / CSS
+              </a>
+              <a href="https://flutter.dev" target="_blank" rel="noopener"
+                class="skill-tag skill-tag-link skill-tag-learning">
+                <span class="skill-icon">💙</span> Flutter
+                <span class="learning-badge">learning</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ===================== HOBBIES ===================== -->
+    <section class="hobbies" id="hobbies">
+      <div class="section-content">
+        <div class="section-header">
+          <span class="section-tag">// 04. Interests</span>
           <h2>Hobbies</h2>
-          <div class="hobby-grid">
-            <span class="skill-tag">Cycling</span>
-            <span class="skill-tag">Coding</span>
-            <span class="skill-tag">Drawing</span>
-            <span class="skill-tag">Gaming</span>
-            <span class="skill-tag">Hacking</span>
-          </div>
         </div>
-      </section>
+        <div class="hobby-grid">
+          <span class="hobby-chip">🚴 Cycling</span>
+          <span class="hobby-chip">💻 Coding</span>
+          <span class="hobby-chip">🎨 Drawing</span>
+          <span class="hobby-chip">🎮 Gaming</span>
+          <span class="hobby-chip">⚡ Hacking</span>
+        </div>
+      </div>
+    </section>
 
-      <!-- Contact Section -->
-      <section class="contact" id="contact">
-        <div class="section-content">
+    <div class="section-divider"></div>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact" id="contact">
+      <div class="section-content">
+        <div class="section-header">
+          <span class="section-tag">// 05. Get In Touch</span>
           <h2>Let's Connect</h2>
-          <p class="contact-intro">Have a project in mind? Found a security issue? Or just want to chat?</p>
-          <div class="contact-links">
-            <a href="mailto:ashwinvijith1010@gmail.com" class="contact-item">
-              <div class="contact-item-top">
-                <span class="contact-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Email icon"><path d="M4 5.25C4 4.56 4.56 4 5.25 4h13.5c.69 0 1.25.56 1.25 1.25v13.5c0 .69-.56 1.25-1.25 1.25H5.25C4.56 20 4 19.44 4 18.75V5.25Zm1.5.75v10.5l5.25-4.5L5.5 6Zm1.36-1.06 5.14 4.41 5.14-4.41H6.86Zm10.64 1.06-5.25 4.5L18.5 16.5V6Zm-.5 11.25-5.25-4.5-5.25 4.5V18.5h10.5V17.25Z"/></svg>
-                </span>
-                <span class="label">Email</span>
-              </div>
-              <span class="value">ashwinvijith1010@gmail.com</span>
-            </a>
-            <a href="https://github.com/TCOxAV" target="_blank" rel="noopener" class="contact-item">
-              <div class="contact-item-top">
-                <span class="contact-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GitHub icon"><path d="M12 2C7.58 2 4 5.58 4 10c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.5-2.22.48-2.69-1.07-2.69-1.07-.36-.92-.88-1.17-.88-1.17-.72-.49.06-.48.06-.48.8.06 1.22.82 1.22.82.71 1.22 1.86.87 2.31.67.07-.52.28-.87.51-1.07-1.77-.2-3.64-.88-3.64-3.92 0-.87.31-1.58.82-2.14-.08-.2-.36-1.02.08-2.13 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.11.16 1.93.08 2.13.51.56.82 1.27.82 2.14 0 3.05-1.87 3.72-3.65 3.92.29.25.55.73.55 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38C17.71 16.53 20 13.54 20 10c0-4.42-3.58-8-8-8Z"/></svg>
-                </span>
-                <span class="label">GitHub</span>
-              </div>
-              <span class="value">@TCOxAV</span>
-            </a>
-            <a href="https://instagram.com/_tcoxav_" target="_blank" rel="noopener" class="contact-item">
-              <div class="contact-item-top">
-                <span class="contact-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Instagram icon"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7Zm0 1.5h10c1.93 0 3.5 1.57 3.5 3.5v10c0 1.93-1.57 3.5-3.5 3.5H7c-1.93 0-3.5-1.57-3.5-3.5V7c0-1.93 1.57-3.5 3.5-3.5Zm5 2.25a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5Zm0 1.5a3.75 3.75 0 1 1 0 7.5 3.75 3.75 0 0 1 0-7.5Zm4.88-.88a.88.88 0 1 0 0 1.75.88.88 0 0 0 0-1.75Z"/></svg>
-                </span>
-                <span class="label">Instagram</span>
-              </div>
-              <span class="value">@_tcoxav_</span>
-            </a>
-            <a href="https://discord.com/users/tcoxav" target="_blank" rel="noopener" class="contact-item">
-              <div class="contact-item-top">
-                <span class="contact-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Discord icon"><path d="M12 2C7.03 2 3 6.03 3 11.95c0 4.95 3.56 9.08 8.24 9.9.6.11.8-.26.8-.56 0-.28-.01-1.03-.01-2.03-3.35.73-4.05-1.6-4.05-1.6-.54-1.37-1.32-1.74-1.32-1.74-1.08-.73.08-.72.08-.72 1.2.08 1.84 1.23 1.84 1.23 1.07 1.84 2.8 1.31 3.48 1 .11-.79.42-1.31.76-1.61-2.67-.3-5.48-1.33-5.48-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.32 11.32 0 0 1 3.01-.41c1.02 0 2.05.14 3.01.41 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.81 1.08.81 2.18 0 1.58-.01 2.86-.01 3.25 0 .31.19.68.81.56C17.44 21.03 21 16.9 21 11.95 21 6.03 16.97 2 12 2ZM9.5 10.5c-.83 0-1.5.68-1.5 1.5S8.67 13.5 9.5 13.5 11 12.82 11 12 10.33 10.5 9.5 10.5Zm5 0c-.83 0-1.5.68-1.5 1.5s.67 1.5 1.5 1.5 1.5-.68 1.5-1.5S15.33 10.5 14.5 10.5Z"/></svg>
-                </span>
-                <span class="label">Discord</span>
-              </div>
-              <span class="value">tcoxav</span>
-            </a>
-          </div>
         </div>
-      </section>
-    </main>
+        <p class="contact-intro">Have a project in mind, found a security issue, or just want to chat tech? Feel free to
+          reach out.</p>
+        <div class="contact-links">
 
-    <footer class="footer">
-      <p>&copy; <span id="year"></span> TCOxAV. All rights reserved.</p>
-    </footer>
+          <a href="mailto:ashwinvijith1010@gmail.com" class="contact-item" data-channel="email">
+            <div class="contact-item-top">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" role="img" aria-label="Email icon">
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+              </span>
+              <span class="label">Email</span>
+            </div>
+            <span class="value">ashwinvijith1010@gmail.com</span>
+          </a>
 
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-  </body>
+          <a href="https://github.com/TCOxAV" target="_blank" rel="noopener" class="contact-item" data-channel="github">
+            <div class="contact-item-top">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="GitHub icon">
+                  <path
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                </svg>
+              </span>
+              <span class="label">GitHub</span>
+            </div>
+            <span class="value">@TCOxAV</span>
+          </a>
+
+          <a href="https://instagram.com/_tcoxav_" target="_blank" rel="noopener" class="contact-item"
+            data-channel="instagram">
+            <div class="contact-item-top">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="Instagram icon">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </span>
+              <span class="label">Instagram</span>
+            </div>
+            <span class="value">@_tcoxav_</span>
+          </a>
+
+          <a href="https://discord.com/users/tcoxav" target="_blank" rel="noopener" class="contact-item"
+            data-channel="discord">
+            <div class="contact-item-top">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="Discord icon">
+                  <path
+                    d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
+                </svg>
+              </span>
+              <span class="label">Discord</span>
+            </div>
+            <span class="value">tcoxav</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> TCOxAV &nbsp;·&nbsp; Crafted with care</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
 </html>
