@@ -1,5 +1,5 @@
 /* ==========================================================================
-   TCOxAV — PORTFOLIO STYLESHEET
+   ASHWIN VIJITH (TCOxAV) — PORTFOLIO STYLESHEET
    Sleek cyberpunk-minimal dark theme with glassmorphism, ambient glows,
    and fluid micro-interactions.
    ========================================================================== */
@@ -868,8 +868,9 @@ section h2 {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  text-decoration: none;
+  text-decoration: none !important;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .skill-tag-link:hover {
@@ -883,6 +884,7 @@ section h2 {
 .skill-icon {
   font-size: 1rem;
   line-height: 1;
+  flex-shrink: 0;
 }
 
 .skill-tag-learning {
@@ -890,14 +892,18 @@ section h2 {
 }
 
 .learning-badge {
+  display: inline-flex;
+  align-items: center;
   font-family: var(--font-mono);
   font-size: 0.68rem;
   background: rgba(245, 158, 11, 0.15);
   color: var(--accent-amber);
   border: 1px solid rgba(245, 158, 11, 0.25);
-  padding: 0.1rem 0.45rem;
+  padding: 0.15rem 0.5rem;
   border-radius: var(--radius-full);
-  margin-left: 0.15rem;
+  margin-left: 0.25rem;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 /* --------------------------------------------------------------------------
